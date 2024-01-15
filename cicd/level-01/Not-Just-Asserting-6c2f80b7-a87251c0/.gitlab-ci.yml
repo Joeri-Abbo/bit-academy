@@ -1,0 +1,32 @@
+stages:
+  - test
+
+
+job_name_php:
+  tags:
+    - docker
+  stage: test
+  image: composer:2.5.4
+  script:
+    - composer i
+    - ./vendor/bin/phpunit test.php
+    - php test.php
+
+#job_name_python:
+#  tags:
+#    - docker
+#  stage: test
+#  image: pandas/pandas:pip-minimal
+#  script:
+#    - pip install -r requirements.txt
+#    - python3 -m unittest main.py
+#
+#job_name_node:
+#  tags:
+#    - docker
+#  stage: test
+#  image: node:19.7.0-alpine3.17
+#  script:
+#    - npm ci
+#    - npm install ava --global
+#    - ava test.js

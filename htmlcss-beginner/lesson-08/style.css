@@ -1,0 +1,57 @@
+.text-green {
+    color: green
+}
+
+a {
+    color: black;
+}
+
+.bg-orange {
+    background-color: orange;
+}
+
+
+.bg-purple {
+    background-color: #CBC3E3;
+}
+
+
+.bg-blue {
+    background-color: lightblue;
+}
+
+.bg-yellow {
+    background-color: yellow;
+}
+
+tr {
+    text-align: center;
+}
+
+td {
+    border: solid 1px black;
+    padding: 10px 20px;
+}
+
+td:hover {
+    cursor: pointer;
+    background-color: palevioletred;
+}
+
+a {
+    text-decoration: none;
+}
+
+.top-title {
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.title {
+    font-size: 16px;
+}
+
+th {
+    background-color: lightgray;
+    padding: 16px;
+}

@@ -1,0 +1,15 @@
+/Users/joeriabbo/bit-academy/c-beginner/level-01/hello-world/bin/Debug/net7.0/hello-world
+/Users/joeriabbo/bit-academy/c-beginner/level-01/hello-world/bin/Debug/net7.0/hello-world.deps.json
+/Users/joeriabbo/bit-academy/c-beginner/level-01/hello-world/bin/Debug/net7.0/hello-world.runtimeconfig.json
+/Users/joeriabbo/bit-academy/c-beginner/level-01/hello-world/bin/Debug/net7.0/hello-world.dll
+/Users/joeriabbo/bit-academy/c-beginner/level-01/hello-world/bin/Debug/net7.0/hello-world.pdb
+/Users/joeriabbo/bit-academy/c-beginner/level-01/hello-world/obj/Debug/net7.0/hello-world.csproj.AssemblyReference.cache
+/Users/joeriabbo/bit-academy/c-beginner/level-01/hello-world/obj/Debug/net7.0/hello-world.GeneratedMSBuildEditorConfig.editorconfig
+/Users/joeriabbo/bit-academy/c-beginner/level-01/hello-world/obj/Debug/net7.0/hello-world.AssemblyInfoInputs.cache
+/Users/joeriabbo/bit-academy/c-beginner/level-01/hello-world/obj/Debug/net7.0/hello-world.AssemblyInfo.cs
+/Users/joeriabbo/bit-academy/c-beginner/level-01/hello-world/obj/Debug/net7.0/hello-world.csproj.CoreCompileInputs.cache
+/Users/joeriabbo/bit-academy/c-beginner/level-01/hello-world/obj/Debug/net7.0/hello-world.dll
+/Users/joeriabbo/bit-academy/c-beginner/level-01/hello-world/obj/Debug/net7.0/refint/hello-world.dll
+/Users/joeriabbo/bit-academy/c-beginner/level-01/hello-world/obj/Debug/net7.0/hello-world.pdb
+/Users/joeriabbo/bit-academy/c-beginner/level-01/hello-world/obj/Debug/net7.0/hello-world.genruntimeconfig.cache
+/Users/joeriabbo/bit-academy/c-beginner/level-01/hello-world/obj/Debug/net7.0/ref/hello-world.dll

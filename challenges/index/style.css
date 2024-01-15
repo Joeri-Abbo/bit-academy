@@ -1,0 +1,63 @@
+body {
+    margin-top: 150px;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#letter {
+    font-size: 64px;
+    color: maroon;
+    font-family: sans-serif;
+}
+
+.error {
+    color: maroon;
+    font-family: sans-serif;
+}
+
+input {
+    text-align: center;
+}
+
+.currentLetter,
+button {
+    font-size: 64px;
+    margin: 0;
+    font-family: sans-serif;
+    color: maroon;
+}
+
+button {
+    font-size: 32px;
+    padding: 10px 20px;
+    background-color: oldlace;
+    border: 1px solid maroon;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 100px);
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+}
+
+.row.r2 {
+    margin-top: 50px;
+}
+
+.tile {
+    background: white;
+    outline-offset: -1px;
+    outline: 1px solid black;
+    width: 100px;
+    height: 100px;
+}
+
+.tile.active {
+    background-color: black;
+}

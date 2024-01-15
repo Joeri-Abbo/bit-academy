@@ -1,0 +1,12 @@
+g.active circle {
+    stroke: #5CC4D4;
+}
+
+g.active path,
+g.active rect {
+    fill: #5CC4D4;
+}
+
+tspan {
+    font-family: sans-serif;
+}

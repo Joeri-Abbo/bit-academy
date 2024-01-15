@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+  app:
+    build:
+      context: .
+      args:
+        xdebug: enabled
+    ports:
+      - "8000:80"
+    volumes:
+      - .:/var/www/html

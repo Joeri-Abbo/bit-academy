@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decoder</title>
+
+    <link href="style.css" rel="stylesheet"/>
+</head>
+
+<body>
+<div class="grid">
+    <div class="r1 flex flex-col">
+        <div class="tile bg-black" data-id="1" onclick="changeState(this)"></div>
+        <div class="tile" data-id="2" onclick="changeState(this)"></div>
+        <div class="tile" data-id="3" onclick="changeState(this)"></div>
+    </div>
+    <div class="mt-50 flex flex-col">
+        <div class="tile" data-id="4" onclick="changeState(this)"></div>
+        <div class="tile" data-id="5" onclick="changeState(this)"></div>
+    </div>
+</div>
+<p class="currentLetter">A</p>
+<input id="letter" class="text-center">
+<p class="error"></p>
+<div class="button">
+    <button class="search" onclick="search()">
+        Zoek
+    </button>
+    <button class="add" onclick="add()">
+        Letter toevoegen
+    </button>
+    <button class="back" onclick="back()">
+        Backspace
+    </button>
+    <button class="clear" onclick="clearInput()">
+        Bericht verwijderen
+    </button>
+</div>
+
+<script src="script.js" defer></script>
+</body>
+
+</html>

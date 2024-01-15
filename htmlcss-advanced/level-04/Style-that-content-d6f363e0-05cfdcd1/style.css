@@ -1,0 +1,29 @@
+.navbar {
+    display: flex;
+    background-color: gray;
+    color: white;
+    justify-content: space-around;
+}
+
+body {
+    background-color: lightgray;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.news:nth-child(1) {
+    grid-column: 1 / span 3;
+}
+
+.news:nth-child(1) h1 {
+    text-align: center;
+}

@@ -1,0 +1,3 @@
+CREATE TABLE IF NOT EXISTS planeten (
+    NAME VARCHAR(255)
+);

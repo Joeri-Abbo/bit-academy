@@ -1,0 +1,43 @@
+h1 {
+    color: red;
+}
+
+p {
+    color: blue;
+    font-size: 20px;
+}
+
+ul {
+    color: pink;
+    font-size: 10px;
+}
+
+html {
+    background-color: purple;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+.wrapper {
+    background-color: teal;
+}
+
+span {
+    color: green;
+}
+
+input, textarea {
+    display: block;
+}
+
+li {
+    display: inline;
+}
+
+article {
+    margin-top: 10px;
+    background-color: aquamarine;
+}

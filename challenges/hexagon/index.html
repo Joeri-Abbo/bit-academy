@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decoder</title>
+
+    <style>
+        body {
+            margin-top: 50px;
+            gap: 20px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        #letter {
+            font-size: 64px;
+            color: maroon;
+            font-family: sans-serif;
+        }
+
+        .error {
+            color: maroon;
+            font-family: sans-serif;
+        }
+
+        input {
+            text-align: center;
+        }
+
+        .currentLetter,
+        button {
+            font-size: 64px;
+            margin: 0;
+            font-family: sans-serif;
+            color: maroon;
+        }
+
+        .currentLetter {
+            margin-bottom: 25px;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        button {
+            font-size: 32px;
+            padding: 10px 20px;
+            background-color: oldlace;
+            border: 1px solid maroon;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 100px);
+        }
+
+        svg {
+            margin-bottom: 25px;
+        }
+
+        g.active path {
+            fill: black;
+        }
+    </style>
+</head>
+
+<body>
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="261.5" height="388"
+        viewBox="0 0 261.5 388">
+        <defs>
+            <clipPath id="clip-path">
+                <rect id="Rectangle_1" data-name="Rectangle 1" width="150" height="130" stroke="rgba(0,0,0,0)"
+                    stroke-width="1" />
+            </clipPath>
+            <clipPath id="clip-path-2">
+                <rect id="Rectangle_1-2" data-name="Rectangle 1" width="150" height="130" fill="none"
+                    stroke="rgba(0,0,0,0)" stroke-width="1" />
+            </clipPath>
+        </defs>
+        <g id="_5" data-name="5" transform="translate(111.5 194)">
+            <g id="Group_2" data-name="Group 2" data-id="5" onclick="changeState(this)">
+                <g id="Group_1" data-name="Group 1" clip-path="url(#clip-path)">
+                    <path id="Path_2" data-name="Path 2" d="M112.21.5H37.789L.577,65l37.211,64.5H112.21L149.422,65Z"
+                        transform="translate(0.001 0.001)" fill="#FFFFFF" stroke="#000" stroke-miterlimit="10"
+                        stroke-width="1" />
+                </g>
+            </g>
+        </g>
+        <g id="_4" data-name="4" transform="translate(111.5 65)">
+            <g id="Group_2-2" data-name="Group 2" data-id="4" onclick="changeState(this)">
+                <g id="Group_1-2" data-name="Group 1" clip-path="url(#clip-path-2)">
+                    <path id="Path_2-2" data-name="Path 2" d="M112.21.5H37.789L.577,65l37.211,64.5H112.21L149.422,65Z"
+                        transform="translate(0.001 0.001)" fill="#FFFFFF" stroke="#000" stroke-miterlimit="10"
+                        stroke-width="1" />
+                </g>
+            </g>
+        </g>
+        <g id="_3" data-name="3" transform="translate(0 258)">
+            <g id="Group_2-3" data-name="Group 2" data-id="3" onclick="changeState(this)">
+                <g id="Group_1-3" data-name="Group 1" clip-path="url(#clip-path-2)">
+                    <path id="Path_2-3" data-name="Path 2" d="M112.21.5H37.789L.577,65l37.211,64.5H112.21L149.422,65Z"
+                        transform="translate(0.001 0.001)" fill="#FFFFFF" stroke="#000" stroke-miterlimit="10"
+                        stroke-width="1" />
+                </g>
+            </g>
+        </g>
+        <g id="_2" data-name="2" transform="translate(0 129)">
+            <g id="Group_2-4" data-name="Group 2" data-id="2" onclick="changeState(this)">
+                <g id="Group_1-4" data-name="Group 1" clip-path="url(#clip-path-2)">
+                    <path id="Path_2-4" data-name="Path 2" d="M112.21.5H37.789L.577,65l37.211,64.5H112.21L149.422,65Z"
+                        transform="translate(0.001 0.001)" fill="#FFFFFF" stroke="#000" stroke-miterlimit="10"
+                        stroke-width="1" />
+                </g>
+            </g>
+        </g>
+        <g id="_1" data-name="1">
+            <g id="Group_2-5" data-name="Group 2" data-id="1" onclick="changeState(this)">
+                <g id="Group_1-5" data-name="Group 1" clip-path="url(#clip-path-2)">
+                    <path id="Path_2-5" data-name="Path 2" d="M112.21.5H37.789L.577,65l37.211,64.5H112.21L149.422,65Z"
+                        transform="translate(0.001 0.001)" fill="#FFFFFF" stroke="#000" stroke-miterlimit="10"
+                        stroke-width="1" />
+                </g>
+            </g>
+        </g>
+    </svg>
+
+    <p class="currentLetter">A</p>
+    <input id="letter">
+    <p class="error"></p>
+    <div class="buttons">
+        <button class="search" onclick="search()">Zoek</button>
+        <button class="add" onclick="add()">Letter toevoegen</button>
+        <button class="back" onclick="back()">Backspace</button>
+        <button class="clear" onclick="clearInput()">Bericht verwijderen</button>
+    </div>
+</body>
+
+<script src="script.js" defer></script>
+
+</html>

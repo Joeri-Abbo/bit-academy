@@ -1,0 +1,28 @@
+label {
+    display: block;
+}
+
+.submit {
+    border-radius: 10px;
+}
+
+input {
+    width: 100%;
+}
+
+body {
+    max-width: 600px;
+    margin: 0 auto;
+}
+textarea {
+    width: 100%;
+    height: 100px;
+}
+
+textarea:focus {
+    border: green 10px solid;
+}
+
+textarea:not(:focus) {
+    border: red 10px solid;
+}

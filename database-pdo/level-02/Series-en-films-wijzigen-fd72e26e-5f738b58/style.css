@@ -1,0 +1,47 @@
+body {
+    padding: 5% 10%;
+}
+
+h1 {
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.link-edit {
+    color: #0000EE;
+    text-decoration: underline;
+    font-size: 12px;
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+}
+
+input, select {
+    width: 100%;
+    height: 30px;
+}
+
+.alert-success{
+    background-color: green;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+}

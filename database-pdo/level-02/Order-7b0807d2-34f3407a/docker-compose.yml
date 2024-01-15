@@ -1,0 +1,30 @@
+version: "3.8"
+services:
+  app:
+    build:
+      context: .
+      args:
+        xdebug: enabled
+    ports:
+      - "8000:80"
+    environment:
+      - DB_CONNECTION=mysql
+      - DB_HOST=db
+      - DB_DATABASE=netland
+      - DB_USERNAME=bit_academy
+      - DB_PASSWORD=mysql
+    depends_on:
+      - db
+    volumes:
+      - .:/var/www/html
+  db:
+    image: mariadb:10.5
+    volumes:
+      - ./storage/app/database:/var/lib/mysql
+    environment:
+      - MYSQL_DATABASE=netland
+      - MYSQL_USER=bit_academy
+      - MYSQL_PASSWORD=mysql
+      - MYSQL_ROOT_PASSWORD=mysql
+    ports:
+      - "3305:3306"

@@ -1,0 +1,27 @@
+stages:
+  - test
+
+
+job_name_php:
+  tags:
+    - docker
+  stage: test
+  image: php:8.2.3-cli-alpine3.17
+  script:
+    - php index.php
+
+job_name_python:
+  tags:
+    - docker
+  stage: test
+  image: python:3.11.2-alpine3.17
+  script:
+    - python main.py
+
+job_name_node:
+  tags:
+    - docker
+  stage: test
+  image: node:19.7.0-alpine3.17
+  script:
+    - node script.js

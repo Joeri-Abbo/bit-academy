@@ -1,0 +1,42 @@
+stages:
+  - printstage
+  - teststage
+  - buildstage
+  - deploystage
+
+variables:
+  GLOBAL_VARIABLE: "Dit is een zelfgemaakte globale variabele"
+
+printstage:
+  stage: printstage
+  tags:
+    - docker
+  script:
+    - >
+      echo "I'm running my first job!"
+      echo "Dit is een hardcoded string"
+      echo "De waarde van de zelfgemaakte globale variabele: $GLOBAL_VARIABLE"
+      LOCAL_VARIABLE="Dit is een zelfgemaakte lokale variabele"
+      echo "De waarde van de zelfgemaakte lokale variabele: $LOCAL_VARIABLE"
+      echo "De naam van de huidige job: $CI_JOB_NAME"
+
+teststage:
+  stage: teststage
+  tags:
+    - docker
+  script:
+    - echo "Running tests..."
+
+buildstage:
+  stage: buildstage
+  tags:
+    - docker
+  script:
+    - echo "Building the project..."
+
+deploystage:
+  stage: deploystage
+  tags:
+    - docker
+  script:
+    - echo "Deploying the project..."

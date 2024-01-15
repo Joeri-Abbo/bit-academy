@@ -1,0 +1,35 @@
+.navbar {
+    display: flex;
+    background-color: gray;
+    color: white;
+    justify-content: space-around;
+}
+
+body {
+    background-color: lightgray;
+}
+
+.content {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.news {
+    flex: 1 0 100%;
+    order: 2;
+}
+
+.news:nth-child(2),
+.news:nth-child(3) {
+    flex: 1 0 50%;
+}
+
+#breaking {
+    background-color: red;
+    color: white;
+    text-align: center;
+    font-size: 48px;
+    padding: 20px;
+    flex: 1 0 100%;
+    order: 1;
+}

@@ -1,0 +1,12 @@
+th {
+    font-weight: 900;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid black;
+}
+
+input {
+    border: none;
+}

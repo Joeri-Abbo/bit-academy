@@ -1,0 +1,1 @@
+SELECT FirstName AS "Voornaam", LastName AS "Achternaam", HireDate AS "Datum in dienst van de medewerkers" FROM Employees;

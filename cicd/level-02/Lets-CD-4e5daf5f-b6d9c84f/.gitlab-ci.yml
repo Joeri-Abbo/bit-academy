@@ -1,0 +1,56 @@
+stages:
+  - build
+  - deploy
+
+build-code-job:
+  tags:
+    - docker
+  stage: build
+  image: node:18-buster
+  script:
+    - echo "Build code"
+
+deploy-code-job:
+  tags:
+    - docker
+  stage: deploy
+  image: node:18-buster
+  variables:
+    GITHUB_URL: https://github.com/Joeri-Abbo/lets-cd.git
+  before_script:
+    - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
+    - eval `ssh-agent -s`
+    - ssh-add <(echo "-----BEGIN RSA PRIVATE KEY-----
+      MIIEogIBAAKCAQEA5ZCpJd6s3dtaT32d4UmjPI3y2wKTCa96vx+EBOZKej31VM+n
+      DIRI9njzMweKR/7VmfrTgc3kYWAAiqHW8N+n6d6wWB/xOxkZ6+CCcb5xP17QnUmr
+      Y83+Bz//lbI4tQQpPIvmPDqUlzmD6p79MpEL6LNQVsfeM5jdB89PP5zmH17MSNGU
+      qj6DC8JAdmdO2IRocKjvfMe/A7vjdJ247+53VCe4Mb6fa7ndlC5st/uT2NY7EnDE
+      ZLZPMNVUf07e26rFI5Eet8RvvEMFcHl83d0Oxua5hNzlsIiSSWnhf8gRVbDaAr45
+      sp6tmc+OjMzevJoDFb1q8wyDjbnU+DR/7hlt/QIDAQABAoIBAG+TYPL8CI8IJxvN
+      lSfDb6hl4aya0rZ5aLJt8e+jsn05kfz3tFx8Cy5oWOPrfUVC0bS2WYiUdrTxQTIg
+      OOT3/5fG2XTriYbMy3F+vEfmZQqE3eYkwT2QCDCj5Whvp+orLJO192A8pK3fkYM+
+      ZRfnsZ8XUCvtls0DNiKumvjzHFIQCFfVY6/h6gfOoBX1qalquDiq8UDKj1zvNtKZ
+      lQT8sLRX37CvX/mM0yBGwNNd3O8isYn9x71ccS9KqKXeTCHwF+6z6rHv7lslIT/2
+      vFHVvRuIb0p2ybaSc2KzMEYuEBDF6ZuzJ186LfwAVP1ZVWUBcAAyxyd9OKYnNPAo
+      UplhDQ0CgYEA/fSvgVXB9/MVr/9xyEWFiNAgpKobiWd2m/xEwaxAUuPknKVqR/hw
+      gXmR58y8xFQl6o8f1baAZB9E1ayXDQgOlCopZiXG4565B6bjpGx6WGaCgUCDtNwJ
+      MTTJPbpQtmZsyHCeKSXUo6r2HXX8J8W4LNQfFSo1K8YxZytegeN1kHMCgYEA52m2
+      4geFJs5PrKlaQ3L/X+7ygkOFRPDe4fs7yXD6iSYd7bWIwtkqBsRiXwxJokla6rQr
+      hcwtx84D8C38WbaDwIgFgbIDM/UypJfL9rzNt2cvtT3tH/lH/0UiPDqPuq4FuSK6
+      OGC8Az6tdK0YVXERncq2y/DxQLfvNlvJWB0cm88CgYB4YHikrNrRxkb8cvAjR1kB
+      ve4LP5rn6cQeMlkBGL4wzFd8LSiQzuG9bbvMjY7Y3S5P3eHwMp7vVqcRRcsf4TbP
+      4qBXDAcXtA/u4Zu8P7NKneS0kbkcjMRKr8PIX72MiEZ+SGugA4+kuRAKbPfGfoFL
+      toy5QpWLl1mplrQoi4IZowKBgC8Rj4M16F1WRVpnL9bcQxkuLuFT/n1hSNRKF4UH
+      l83hlODOtbx8E1JBC4ktpKR/qyBl+RxDxWQIgUCO+e79cprsj8IrhP9CdkSII5JS
+      IL2XHVsN93czavN/ClGZz7Y2wy8+4wWol1VJoFpFAtgOIXkozDl7DncNcnhp/vAP
+      K8x9AoGATIWpJ5teE0HHvBmoU1L4BTDq47CqxdBGyc/vNw1mA/9CTcnf67JubalR
+      I5aP1BdnKf8j0gf9V5mBRQtdRasRp8Fl8KXDBIrYQ85gVPOh0OBKpb1ny6msBFEk
+      djaaADNU7+m15SX4/UI/O3Q5PCV7QyhOO2lqr1W8GR1Bt6beIbo=
+      -----END RSA PRIVATE KEY-----")
+    - mkdir -p ~/.ssh
+    - ssh-keyscan -t rsa gitlab.com >> ~/.ssh/known_hosts
+    - ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
+  script:
+    - git checkout feature-branch
+    - git merge main
+    - git push origin main

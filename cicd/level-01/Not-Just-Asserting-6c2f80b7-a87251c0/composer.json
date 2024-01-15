@@ -1,0 +1,17 @@
+{
+  "name": "joeriabbo/not-just-asserting-6c2f80b7-a87251c0",
+  "autoload": {
+    "psr-4": {
+      "Joeriabbo\\NotJustAsserting6c2f80b7A87251c0\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Joeri Abbo",
+      "email": "joeriabbo@hotmail.com"
+    }
+  ],
+  "require": {
+    "phpunit/phpunit": "^10"
+  }
+}

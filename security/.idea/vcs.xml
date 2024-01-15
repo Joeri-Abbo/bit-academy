@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/level-01/Admin-only-9cf806e0-c6de5893" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/level-01/Email-validatie-202379a4-0b02d726" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/level-01/Hidden-input-cant-hide-from-me-346969ae-1d94dc15" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/level-02/CSRF-0ddc812a-ab486ba7" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/level-02/Persistent-XSS-2ccfffc1-778b53f7" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/level-02/Reflected-XSS-c5ba9ae9-f93b7218" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/level-03/Encryptie-AES-b2d84908-c13aecc9" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/level-03/Encryptie-Een-simpel-begin-c112d7cb-4f867e64" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/level-03/HTTPS-e783040d-94fd9763" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/level-03/MD5-Hashing-26259356-565c8c69" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/level-03/Maar-hoe-doe-ik-wachtwoorden-dan-18e38fce-42027502" vcs="Git" />
+  </component>
+</project>

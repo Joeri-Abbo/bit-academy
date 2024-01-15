@@ -1,0 +1,39 @@
+.flex {
+    display: flex;
+    /*flex-direction: column;*/
+    /*align-items: center;*/
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.row div {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.row div, .row img {
+    margin: 10px 5px;
+}
+
+
+.item {
+    flex: 1;
+    padding: 30px;
+    margin: 25px;
+}
+
+.item:nth-child(1),
+.item:nth-child(3) {
+    flex-grow: 1;
+    flex-shrink: 1;
+    background-color: lightblue;
+}
+
+.item:nth-child(2) {
+    flex-grow: 2;
+    flex-shrink: 1;
+}

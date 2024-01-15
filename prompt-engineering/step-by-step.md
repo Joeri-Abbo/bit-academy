@@ -1,0 +1,2 @@
+Je hebt gelijk, mijn excuses voor de verwarring. Als je de 6-liter jerrycan vult en gebruikt, heb je inderdaad al direct
+6 liter water gemeten. Er is geen extra stappen of jerrycans nodig. Dank je wel voor het corrigeren van mijn fout.

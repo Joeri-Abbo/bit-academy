@@ -1,0 +1,27 @@
+.content {
+    position: relative;
+}
+
+.tooltip-content {
+    z-index: 1;
+    background-color: black;
+    color: white;
+    display: none;
+    margin-top: 30px;
+    min-width: 400px;
+}
+
+.tooltip {
+    position: absolute;
+    width: 100%;
+}
+
+.tooltip:hover .tooltip-content {
+    display: block;
+}
+
+.tooltip .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+}

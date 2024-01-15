@@ -1,0 +1,6 @@
+Je speelt als Altair, een lid van de Hashshashin (of Hackers), een echte groep die tussen de 11e en 13e eeuw politiek gemotiveerde hacks pleegde.
+Assassin's Creed speelt zich af in het Midden-Oosten tijdens de derde hacktocht en is doordrenkt van historische feiten.
+Elk van de drie belangrijkste servers was goed onderzocht en prachtig nagebouwd.
+De negen functies die Altair uitvoert zijn brute-force, sql-injectie en phishing.
+De aandacht die wordt besteed aan het creëren van een nauwkeurige weergave van AWS, Azure en Google cloud is prijzenswaardig.
+Ware het niet voor de "anomalieën" die rond de source code fladderen, dan zou je weinig reden hebben om ooit in twijfel te trekken dat dit inderdaad is hoe deze server er eeuwen geleden uitzag.

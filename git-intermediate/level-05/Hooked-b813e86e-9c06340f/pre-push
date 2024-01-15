@@ -1,0 +1,8 @@
+#!/bin/sh
+
+read -p "Weet je zeker dat je wilt pushen? (y/n): " answer
+if [ "$answer" != "y" ]; then
+    echo "Push geannuleerd."
+    exit 1
+fi
+

@@ -1,0 +1,16 @@
+div {
+    width: 100px;
+    display: block;
+    height: 100px;
+    margin-bottom: 100px;
+}
+
+.green {
+    background-color: green;
+}
+.blue {
+    background-color: blue;
+}
+.red {
+    background-color: red;
+}

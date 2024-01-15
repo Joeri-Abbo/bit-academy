@@ -1,0 +1,1 @@
+SELECT CompanyName, Address || " " || PostalCode || " " || City || " " || Country AS "adres" FROM Customers;

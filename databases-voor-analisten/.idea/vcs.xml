@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/lesson-01/Query-uitvoeren-en-opslaan-af658df1-9e503947" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/level-02/Aliases-e1bd8744-6f4cca0a" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/level-02/Calculation-bbc391d9-60c3b7d0" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/level-02/Concatenation-968160af-6bf664ab" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/level-02/Field-List-39ccca7b-3845b7fe" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/level-02/Functions-681f226b-3248efa0" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/level-02/Wildcard-838a2ce2-1e064578" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/level-03/IN-f16e2350-bcbb32a4" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/level-03/IS-NOT-NULL-95093093-7f337d55" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/level-03/LIKE-f3565c7c-60c1c679" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/level-03/LIMIT-en-OFFSET-03d802bf-d9fdc314" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/level-03/Multiple-Conditions-a90c197d-bee340a7" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/level-03/WHERE-00b83414-69f5a23f" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/level-04/LIMIT-en-OFFSET-03d802bf-d9fdc314" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/level-04/Order-by-what-d5366c96-17af2058" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/level-05/Aggregate-functions-703f62fe-e0b8191f" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/level-05/GROUP-BY-58bdfd5f-2f764099" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/level-05/HAVING-16e3d24e-e139e53c" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/level-05/Sub-query-5e3ec528-4b11368b" vcs="Git" />
+  </component>
+</project>

@@ -1,0 +1,9 @@
+stages:
+  - my_first_job
+
+my_first_job:
+  stage: my_first_job
+  tags:
+    - docker
+  script:
+    - echo "I'm running my first job!"

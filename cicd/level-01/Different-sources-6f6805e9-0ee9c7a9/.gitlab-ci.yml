@@ -1,0 +1,18 @@
+stages:
+  - my_first_job
+
+variables:
+  GLOBAL_VARIABLE: "Dit is een zelfgemaakte globale variabele"
+
+my_first_job:
+  stage: my_first_job
+  tags:
+    - docker
+  script:
+    - >
+      echo "I'm running my first job!"
+      echo "Dit is een hardcoded string"
+      echo "De waarde van de zelfgemaakte globale variabele: $GLOBAL_VARIABLE"
+      LOCAL_VARIABLE="Dit is een zelfgemaakte lokale variabele"
+      echo "De waarde van de zelfgemaakte lokale variabele: $LOCAL_VARIABLE"
+      echo "De naam van de huidige job: $CI_JOB_NAME"

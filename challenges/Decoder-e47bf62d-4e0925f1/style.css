@@ -1,0 +1,66 @@
+body {
+    margin-top: 150px;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#letter {
+    font-size: 64px;
+    color: deepskyblue;
+    font-family: sans-serif;
+}
+
+.error {
+    color: deepskyblue;
+    font-family: sans-serif;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.currentLetter,
+.button {
+    font-size: 64px;
+    margin: 0;
+    color: deepskyblue;
+}
+
+button {
+    font-size: 32px;
+    padding: 10px 20px;
+    background-color: whitesmoke;
+    border: 1px solid deepskyblue;
+    border-radius: 10px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 100px);
+}
+
+.tile {
+    background: white;
+    outline-offset: -1px;
+    outline: 1px solid black;
+    width: 100px;
+    height: 100px;
+}
+
+.tile.bg-black {
+    background-color: black;
+}
+
+.mt-50 {
+    margin-top: 50px;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.flex {
+    display: flex;
+}

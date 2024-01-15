@@ -1,0 +1,201 @@
+@font-face {
+    font-family: 'IBM Plex Mono';
+    src: url('IBM_Plex_Mono/IBMPlexMono-Regular.ttf') format('truetype'); /* Replace 'path/to' with the actual path to your font file */
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    background-color: #FAF9F7;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+.logo {
+    height: 40px;
+    padding-left: 10px;
+}
+
+.nav {
+    background-color: #000563;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: 5px;
+}
+
+.nav-center ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-center ul li {
+    margin-right: 10px;
+}
+
+.nav-center ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    gap: 13px;
+}
+
+.container .content {
+    flex: 6;
+}
+
+.container .sidebar {
+    flex: 1;
+    margin-top: 25px;
+}
+
+.card {
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 3px 1px -2px #0003, 0 2px 2px #00000024, 0 1px 5px #0000001f;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+th {
+    padding: 15px;
+    color: #0009;
+    font-size: 12px;
+}
+
+
+td {
+    padding: 15px;
+    margin: 10px;
+}
+
+tr {
+    border-bottom: 1px solid lightgray;
+}
+
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #57be8e;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.nav-center ul li a img {
+    height: 20px;
+    margin-right: 5px;
+}
+
+.nav-center ul li a {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.nav-center ul li a.active {
+    background-color: white;
+    border-radius: 10px;
+    color: #57be8e;
+}
+
+.avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.avatar-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.avatar-container .state {
+    transform: rotate(90deg);
+}
+
+.credits-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-right: 10px;
+}
+
+.credits-container img {
+    height: 20px;
+}
+
+.progress-bar-container {
+    background-color: #87dbe5;
+    padding: 8px;
+    min-width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.progress-bar-container .bar {
+    position: absolute;
+    background-color: #2497a5;
+    width: 40%;
+    height: 200px;
+    left: 0;
+}
+
+.progress-bar-container .score {
+    width: 100%;
+    z-index: 10;
+    text-align: center;
+}
+
+th.order {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+
+th svg {
+    height: 10px;
+
+    fill: #0009;
+}
